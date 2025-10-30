@@ -1,0 +1,28 @@
+<svg width="800" height="1400" viewBox="0 0 800 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1400" rx="36" fill="#111" />
+  <rect x="32" y="32" width="736" height="1336" rx="24" fill="#fafafa" />
+  <rect x="32" y="32" width="736" height="180" rx="24" fill="#000" />
+  <text x="90" y="120" font-family="'Bebas Neue', Arial, sans-serif" font-size="110" fill="#ef4444" letter-spacing="12">REXHA</text>
+  <text x="90" y="185" font-family="'Bebas Neue', Arial, sans-serif" font-size="72" fill="#ef4444" letter-spacing="6">BARBERS</text>
+  <line x1="90" y1="220" x2="710" y2="220" stroke="#111" stroke-width="6" />
+  <g font-family="'Inter', Arial, sans-serif" font-size="36" fill="#111">
+    <text x="90" y="290">Gents Normal Haircut ........................................ £9</text>
+    <text x="90" y="350">Gents Skin Fade .............................................. £10</text>
+    <text x="90" y="410">Kids Normal Haircut ........................................ £8</text>
+    <text x="90" y="470">Kids Skin Fade ............................................... £9</text>
+    <text x="90" y="530">Clean Shave .................................................. £7</text>
+    <text x="90" y="590">Design Shave ................................................. £7</text>
+    <text x="90" y="650">Beard Trim .................................................... £7</text>
+    <text x="90" y="710">Beard Trim &amp; Shape Up ..................................... £9</text>
+    <text x="90" y="770">Threading (Cheeks) .......................................... £3</text>
+    <text x="90" y="830">Threading (Cheeks &amp; Eyebrows) ...................... £5</text>
+    <text x="90" y="890">Head Massage ............................................... £10</text>
+    <text x="90" y="950">Hair Colour from ............................................ £10</text>
+    <text x="90" y="1010">Facial ............................................................. £10</text>
+    <text x="90" y="1070">Facial (Massage) &amp; Steam .......................... £15</text>
+    <text x="90" y="1130">Nose Wax ..................................................... £3</text>
+    <text x="90" y="1190">Cheek Wax .................................................... £6</text>
+    <text x="90" y="1250">Nose &amp; Ear Wax .......................................... £6</text>
+  </g>
+  <text x="90" y="1330" font-family="'Bebas Neue', Arial, sans-serif" font-size="64" fill="#ef4444">OPEN 7 DAYS A WEEK</text>
+</svg>

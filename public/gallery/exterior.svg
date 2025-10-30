@@ -1,0 +1,18 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="#0f0d10" />
+  <rect x="80" y="140" width="1040" height="520" rx="32" fill="#111" />
+  <rect x="140" y="200" width="920" height="400" rx="24" fill="#1a181c" stroke="#ef4444" stroke-width="12" />
+  <rect x="160" y="220" width="360" height="360" rx="16" fill="#0b0a0d" />
+  <rect x="540" y="220" width="520" height="360" rx="16" fill="#131217" />
+  <rect x="160" y="220" width="360" height="90" fill="#ef4444" />
+  <text x="190" y="280" font-family="'Bebas Neue', Arial, sans-serif" font-size="72" fill="#fff" letter-spacing="14">REXHA</text>
+  <text x="190" y="336" font-family="'Bebas Neue', Arial, sans-serif" font-size="48" fill="#fff" letter-spacing="8">BARBERS</text>
+  <rect x="580" y="260" width="440" height="240" rx="16" fill="#0f0d10" stroke="#27242a" stroke-width="6" />
+  <rect x="610" y="290" width="180" height="180" rx="12" fill="#1e1b21" />
+  <rect x="820" y="290" width="180" height="180" rx="12" fill="#1e1b21" />
+  <rect x="610" y="490" width="390" height="60" rx="16" fill="#ef4444" />
+  <text x="630" y="530" font-family="'Inter', Arial, sans-serif" font-size="26" fill="#fff">83 HIGH STREET · DUDLEY</text>
+  <rect x="160" y="420" width="360" height="160" rx="18" fill="#18161a" stroke="#27242a" stroke-width="6" />
+  <text x="190" y="475" font-family="'Inter', Arial, sans-serif" font-size="28" fill="#f5f5f5">Walk-ins welcome</text>
+  <text x="190" y="520" font-family="'Inter', Arial, sans-serif" font-size="24" fill="#d4d4d8">Open 7 days · Call 07487 596780</text>
+</svg>
