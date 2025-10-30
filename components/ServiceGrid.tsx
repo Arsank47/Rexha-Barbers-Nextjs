@@ -25,18 +25,18 @@ export function ServiceGrid() {
             ))}
           </dl>
         </div>
-        <aside className="hidden h-full flex-col justify-between gap-6 lg:flex">
-          <div className="relative flex-1 min-h-[360px] overflow-hidden rounded-[2.5rem] border border-primary/30 bg-black/60 shadow-2xl shadow-black/60">
-            <Image
-              src="/images/shop-price-board.jpg"
-              alt="Service price board at Rexha Barbers"
-              fill
-              className="object-cover"
-              sizes="360px"
-            />
-          </div>
-          <p className="text-sm text-slate-300">
-            Pop in any day of the week – we keep the same honest prices whether you book ahead or walk in.
+        <aside className="hidden h-full flex-col justify-start gap-6 lg:flex">
+        <div className="relative w-[320px] h-[520px] mx-auto rounded-2xl overflow-hidden border border-primary/30 bg-black/70 shadow-2xl shadow-black/60">
+          <Image
+            src="/images/shop-price-board-digital.jpg"
+            alt="Service price board at Rexha Barbers"
+            fill
+            className="object-contain"
+            sizes="320px"
+          />
+        </div>
+          <p className="text-sm text-slate-300 text-center mt-2">
+            Pop in any day of the week — we keep the same honest prices whether you book ahead or walk in.
           </p>
         </aside>
       </div>

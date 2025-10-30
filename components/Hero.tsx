@@ -33,7 +33,7 @@ export function Hero() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#7f1d1d,transparent_70%)]" />
           <div className="relative h-full min-h-[420px] w-full overflow-hidden rounded-3xl">
             <Image
-              src="/images/shop-interior-hero.jpg"
+              src="/images/shop-front.jpg"
               alt="Inside Rexha Barbers with styling chairs and mirrors"
               fill
               className="object-cover"
