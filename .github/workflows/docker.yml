@@ -7,7 +7,6 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/rexha-barbers-2
 
 jobs:
   build-and-push:
@@ -30,6 +29,11 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      # Make full repo path and force lowercase (GHCR requires lowercase)
+      - name: Normalize image repo to lowercase
+        run: |
+          echo "IMAGE_REPO=$(echo '${{ env.REGISTRY }}/${{ github.repository_owner }}/rexha-barbers-2' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+
       - name: Build & push multi-arch image
         uses: docker/build-push-action@v5
         with:
@@ -37,12 +41,12 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+            ${{ env.IMAGE_REPO }}:latest
+            ${{ env.IMAGE_REPO }}:${{ github.sha }}
 
   deploy:
     name: Deploy on self-hosted runner (Rexha Barbers 2)
-    runs-on: [self-hosted, linux, actions-runner-rexha-barbers]
+    runs-on: [self-hosted, linux, actions-runner-rexha-barbers-2]
     needs: build-and-push
     permissions:
       packages: read
@@ -55,7 +59,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Pull latest image
-        run: docker pull ghcr.io/${{ env.IMAGE_NAME }}:latest
+        run: docker pull ${{ env.IMAGE_REPO }}:latest
 
       - name: Stop & remove old container (if exists)
         run: |
@@ -65,17 +69,15 @@ jobs:
       - name: Run new container (port 8011)
         env:
           NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
-          NODE_ENV: production
-          PORT: 8011
         run: |
           docker run -d \
             --name rexha-barbers-2 \
             --restart=unless-stopped \
-            -e NODE_ENV="$NODE_ENV" \
-            -e PORT="$PORT" \
+            -e NODE_ENV=production \
+            -e PORT=8011 \
             -e NEXT_PUBLIC_SITE_URL="$NEXT_PUBLIC_SITE_URL" \
             -p 8011:8011 \
-            ghcr.io/${{ env.IMAGE_NAME }}:latest
+            ${{ env.IMAGE_REPO }}:latest
 
       - name: Show running containers
         run: docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}"
