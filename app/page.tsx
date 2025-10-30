@@ -2,7 +2,6 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ExperienceHighlights } from "@/components/ExperienceHighlights";
 import { ServiceGrid } from "@/components/ServiceGrid";
-import { BarberShowcase } from "@/components/BarberShowcase";
 import { Gallery } from "@/components/Gallery";
 import { Testimonials } from "@/components/Testimonials";
 import { BookingCTA } from "@/components/BookingCTA";
@@ -18,7 +17,6 @@ export default function Home() {
         <Hero />
         <ExperienceHighlights />
         <ServiceGrid />
-        <BarberShowcase />
         <Gallery />
         <GoogleReviews />
         <Testimonials />

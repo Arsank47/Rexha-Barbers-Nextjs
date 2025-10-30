@@ -1,18 +1,18 @@
 export const galleryImages = [
   {
-    alt: "Reception area and barber chairs inside Rexha Barbers",
-    src: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80"
+    alt: "Full view of the Rexha Barbers styling stations",
+    src: "/images/shop-floor-main.jpg"
   },
   {
-    alt: "Barber stations with mirrors and product displays",
-    src: "https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?auto=format&fit=crop&w=900&q=80"
+    alt: "Close-up of the Rexha Barbers styling chairs",
+    src: "/images/shop-floor-detail.jpg"
   },
   {
-    alt: "Street view of Rexha Barbers entrance",
-    src: "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=900&q=80"
+    alt: "Rexha Barbers red and black shopfront on Dudley High Street",
+    src: "/images/shop-front.jpg"
   },
   {
-    alt: "Printed price list displayed inside the barbershop",
-    src: "https://images.unsplash.com/photo-1521579971123-1192931a1452?auto=format&fit=crop&w=900&q=80"
+    alt: "Printed Rexha Barbers price list with red highlights",
+    src: "/images/shop-price-board.jpg"
   }
 ];
