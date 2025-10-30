@@ -1,73 +1,43 @@
-## Rexha Barbers Website
+# Rexha Barbers · Next.js
 
-### Overview
+Modern marketing site for Rexha Barbers, inspired by the original Django implementation. Built with the Next.js App Router,
+TypeScript, and Tailwind CSS to deliver a cinematic, lounge-inspired experience.
 
-Official website for **Rexha Barbers**, built to showcase services, portfolio, and facilitate appointment booking.
+## Features
 
-### Tech Stack
+- Hero, services, team, testimonials, gallery, and booking call-to-action sections.
+- Responsive layout with glassmorphism accents and gold highlight palette.
+- Remote Unsplash imagery configured via `next/image` remote patterns.
+- Tailwind utility classes and custom components for rapid iteration.
 
-  * **Framework:** Next.js (React)
-  * **Language:** TypeScript
-  * **Styling:** Tailwind CSS
-
-### Getting Started
-
-#### Prerequisites
-
-  * Node.js (16+)
-  * npm or Yarn
-
-#### Installation
+## Getting Started
 
 ```bash
-git clone [Your Repository URL]
-cd rexha-barbers
-npm install # or yarn install
+npm install
+npm run dev
 ```
 
-#### Environment Variables
+Visit `http://localhost:3000` to view the site.
 
-Create a `.env.local` file:
+## Available Scripts
 
-```
-NEXT_PUBLIC_API_BASE_URL=...
-NEXT_PUBLIC_BOOKING_LINK=...
-```
+- `npm run dev` – Start the local development server.
+- `npm run build` – Create an optimized production build.
+- `npm run start` – Run the production build locally.
+- `npm run lint` – Lint the project using the Next.js ESLint configuration.
 
-#### Development
+## Environment Variables
 
-To run the local development server:
+- `NEXT_PUBLIC_BOOKING_LINK` (optional): override the default booking link used throughout the site.
 
-```bash
-npm run dev # or yarn dev
-# Access: http://localhost:3000
-```
+## Project Structure
 
-### Build & Deploy
+- `app/` – App Router entrypoints and global styles.
+- `components/` – Presentational UI components.
+- `lib/data/` – Structured content used to render sections.
+- `public/` – Static assets.
 
-#### Production Build
+## Deployment
 
-To create an optimized production build:
-
-```bash
-npm run build # or yarn build
-```
-
-#### Production Server
-
-To serve the production build locally:
-
-```bash
-npm start # or yarn start
-```
-
-### Project Structure
-
-  * `pages/`: Application routes.
-  * `components/`: Reusable React components.
-  * `public/`: Static assets (images, favicon).
-  * `styles/`: Global styles and configuration.
-
-### Contribution
-
-Feel free to open an **issue** or submit a **pull request** for bug fixes or improvements.
+Any platform that supports Next.js can host the project (Vercel, Netlify, Render, etc.). Remember to set `NEXT_PUBLIC_BOOKING_LINK`
+if you need to change the booking destination per environment.
