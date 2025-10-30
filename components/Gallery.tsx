@@ -5,8 +5,8 @@ import { SectionHeading } from "./SectionHeading";
 export function Gallery() {
   return (
     <section id="gallery" className="section-container">
-      <SectionHeading align="center" eyebrow="Gallery" title="A look around">
-        Step inside our High Street shop — modern chairs, clean stations and a relaxed vibe.
+      <SectionHeading align="center" eyebrow="Gallery" title="Rexha in red & black">
+        A glimpse of the High Street shopfront, the polished stations and the price board ready for the week ahead.
       </SectionHeading>
       <div className="mt-12 grid gap-6 md:grid-cols-4">
         {galleryImages.map((image, index) => (

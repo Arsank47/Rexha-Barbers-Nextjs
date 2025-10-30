@@ -10,15 +10,15 @@ export function Hero() {
       </div>
       <div className="section-container flex flex-col items-start gap-12 pb-28 pt-24 md:flex-row md:items-center md:justify-between">
         <div className="max-w-2xl space-y-8">
-          <p className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs uppercase tracking-[0.3em] text-primary">
-            Dudley · Since 2010
+          <p className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/15 px-4 py-2 text-xs uppercase tracking-[0.3em] text-primary">
+            Dudley · Open 7 Days
           </p>
           <h1 className="font-heading text-4xl leading-tight text-white md:text-6xl">
-            Sharp cuts, warm fades & friendly service in the heart of Dudley.
+            Sharp cuts, warm fades & a bold welcome in the heart of Dudley.
           </h1>
           <p className="text-lg text-slate-200 md:text-xl">
-            Rexha Barbers blends traditional barbering with modern style. Walk in or give us a call for skin fades, beard work,
-            hot shaves and more — open seven days a week.
+            Step inside Rexha Barbers for precision skin fades, beard work and relaxing treatments — all delivered with the same
+            red-and-black energy as our High Street shopfront.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <a className="btn-primary" href="tel:+447487596780">
@@ -33,8 +33,8 @@ export function Hero() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#7f1d1d,transparent_70%)]" />
           <div className="relative h-full min-h-[420px] w-full overflow-hidden rounded-3xl">
             <Image
-              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
-              alt="Outside of Rexha Barbers in Dudley"
+              src="/images/shop-interior-hero.jpg"
+              alt="Inside Rexha Barbers with styling chairs and mirrors"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 400px"

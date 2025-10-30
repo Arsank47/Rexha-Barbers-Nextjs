@@ -2,12 +2,7 @@ export const services = [
   {
     title: "Gents Normal Haircut",
     description: "Classic scissor and clipper work finished with product styling.",
-    price: "£9"
-  },
-  {
-    title: "Gents Skin Fade",
-    description: "Smooth skin fade with detailed blending and sharp edges.",
-    price: "£10"
+    price: "£8"
   },
   {
     title: "Kids Normal Haircut",
@@ -15,8 +10,13 @@ export const services = [
     price: "£8"
   },
   {
+    title: "Gents Skin Fade",
+    description: "Smooth skin fade with detailed blending and sharp edges.",
+    price: "£9"
+  },
+  {
     title: "Kids Skin Fade",
-    description: "Age-appropriate skin fade with clean finish.",
+    description: "Age-appropriate skin fade with a sharp finish.",
     price: "£9"
   },
   {
@@ -55,9 +55,9 @@ export const services = [
     price: "£10"
   },
   {
-    title: "Hair Colour",
-    description: "Colour services tailored to your style (from price).",
-    price: "From £10"
+    title: "Hair Colour (From)",
+    description: "Colour services tailored to your style – ask in store for a quote.",
+    price: "£10"
   },
   {
     title: "Facial",
@@ -65,8 +65,8 @@ export const services = [
     price: "£10"
   },
   {
-    title: "Facial & Steam",
-    description: "Face massage, mask and steam therapy.",
+    title: "Facial (Face Massage) & Steam",
+    description: "Face massage, mask and steam therapy for a full refresh.",
     price: "£15"
   },
   {
@@ -75,9 +75,9 @@ export const services = [
     price: "£3"
   },
   {
-    title: "Cheek Wax",
+    title: "Cheeks Wax",
     description: "Smooth cheeks with warm wax finish.",
-    price: "£6"
+    price: "£5"
   },
   {
     title: "Nose & Ear Wax",

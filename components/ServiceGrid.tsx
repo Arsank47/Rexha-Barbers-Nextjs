@@ -28,7 +28,7 @@ export function ServiceGrid() {
         <aside className="hidden h-full flex-col justify-between gap-6 lg:flex">
           <div className="relative flex-1 min-h-[360px] overflow-hidden rounded-[2.5rem] border border-primary/30 bg-black/60 shadow-2xl shadow-black/60">
             <Image
-              src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=720&q=80"
+              src="/images/shop-price-board.jpg"
               alt="Service price board at Rexha Barbers"
               fill
               className="object-cover"
