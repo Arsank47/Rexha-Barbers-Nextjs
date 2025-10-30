@@ -5,15 +5,14 @@ import { SectionHeading } from "./SectionHeading";
 export function Gallery() {
   return (
     <section id="gallery" className="section-container">
-      <SectionHeading align="center" eyebrow="Gallery" title="Inside the Lounge">
-        Peek into the Rexha Barbers experience — a carefully curated atmosphere designed to help you disconnect, recharge, and
-        leave looking your best.
+      <SectionHeading align="center" eyebrow="Gallery" title="A look around">
+        Step inside our High Street shop — modern chairs, clean stations and a relaxed vibe.
       </SectionHeading>
       <div className="mt-12 grid gap-6 md:grid-cols-4">
         {galleryImages.map((image, index) => (
           <div
             key={image.src}
-            className={`relative overflow-hidden rounded-3xl border border-white/5 bg-white/5 shadow-xl shadow-black/30 backdrop-blur ${
+            className={`relative overflow-hidden rounded-3xl border border-primary/30 bg-black/50 shadow-xl shadow-black/50 backdrop-blur ${
               index === 0 ? "md:col-span-2 md:row-span-2" : ""
             }`}
           >

@@ -1,20 +1,17 @@
 export const testimonials = [
   {
-    quote:
-      "The attention to detail is unmatched. Arben transformed my look and walked me through how to maintain it between visits.",
-    name: "Michael H.",
-    role: "Creative Director"
+    quote: "Always a top trim. The lads remember exactly how I like my fade and the price is spot on.",
+    name: "Jamie W.",
+    role: "Google Review"
   },
   {
-    quote:
-      "Luxurious atmosphere with real craftsmanship. The hot towel shave is a weekly ritual I look forward to every time.",
-    name: "Darius L.",
-    role: "Entrepreneur"
+    quote: "Great with my boys – patient, quick and the cuts always look mint. Wouldn’t go anywhere else.",
+    name: "Sonia P.",
+    role: "Google Review"
   },
   {
-    quote:
-      "They truly listen and craft a style that fits your lifestyle. Easily the best grooming experience in the city.",
-    name: "Evan K.",
-    role: "Architect"
+    quote: "Walked in after work and was seen straight away. Friendly barbers and a proper skin fade.",
+    name: "Callum D.",
+    role: "Google Review"
   }
 ];

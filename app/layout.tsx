@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: "Rexha Barbers | Grooming Studio",
+  title: "Rexha Barbers | Dudley Barbershop",
   description:
-    "Rexha Barbers is a modern grooming studio offering precision haircuts, hot towel shaves, and beard styling in a refined lounge atmosphere."
+    "Rexha Barbers on Dudley High Street offers skin fades, beard trims, shaves and grooming services seven days a week."
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="font-body bg-slate-950 text-slate-100 antialiased">
+      <body className="font-body bg-black text-slate-100 antialiased">
         {children}
       </body>
     </html>
