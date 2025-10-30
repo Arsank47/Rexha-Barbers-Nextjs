@@ -34,15 +34,18 @@ jobs:
         run: |
           echo "IMAGE_REPO=$(echo '${{ env.REGISTRY }}/${{ github.repository_owner }}/rexha-barbers-2' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
 
-      - name: Build & push multi-arch image
+      - name: Build & push (with cache)
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          platforms: linux/amd64,linux/arm64
+          # If you truly need arm64 too, change to: linux/amd64,linux/arm64
+          platforms: linux/amd64
           tags: |
             ${{ env.IMAGE_REPO }}:latest
             ${{ env.IMAGE_REPO }}:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
   deploy:
     name: Deploy on self-hosted runner (Rexha Barbers 2)
@@ -57,6 +60,11 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Recreate IMAGE_REPO in this job too (env doesn't cross jobs)
+      - name: Normalize image repo to lowercase
+        run: |
+          echo "IMAGE_REPO=$(echo 'ghcr.io/${{ github.repository_owner }}/rexha-barbers-2' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
 
       - name: Pull latest image
         run: docker pull ${{ env.IMAGE_REPO }}:latest
