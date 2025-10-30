@@ -1,26 +1,87 @@
 export const services = [
   {
-    title: "Signature Fade",
-    description: "Precision fades tailored to your features with detailed clipper and scissor work.",
-    duration: "45 min",
-    price: "$45"
+    title: "Gents Normal Haircut",
+    description: "Classic scissor and clipper work finished with product styling.",
+    price: "£9"
   },
   {
-    title: "Hot Towel Shave",
-    description: "Classic straight-razor shave with hot towel prep, essential oils, and soothing finish.",
-    duration: "30 min",
-    price: "$35"
+    title: "Gents Skin Fade",
+    description: "Smooth skin fade with detailed blending and sharp edges.",
+    price: "£10"
   },
   {
-    title: "Beard Sculpt",
-    description: "Line-up, shaping, and conditioning treatment that leaves your beard sharp and hydrated.",
-    duration: "25 min",
-    price: "$30"
+    title: "Kids Normal Haircut",
+    description: "Fresh trim for under 16s with plenty of patience and care.",
+    price: "£8"
   },
   {
-    title: "Restyle Cut",
-    description: "Consultation-driven restyle with premium products and styling lesson to finish.",
-    duration: "60 min",
-    price: "$65"
+    title: "Kids Skin Fade",
+    description: "Age-appropriate skin fade with clean finish.",
+    price: "£9"
+  },
+  {
+    title: "Clean Shave",
+    description: "Traditional hot towel shave and relaxing finish.",
+    price: "£7"
+  },
+  {
+    title: "Design Shave",
+    description: "Custom beard or hair designs with razor detail.",
+    price: "£7"
+  },
+  {
+    title: "Beard Trim",
+    description: "Shape and tidy finished with nourishing oils.",
+    price: "£7"
+  },
+  {
+    title: "Beard Trim & Shape Up",
+    description: "Detailed line-up with razor work for crisp edges.",
+    price: "£9"
+  },
+  {
+    title: "Threading (Cheeks)",
+    description: "Define cheek lines with gentle threading technique.",
+    price: "£3"
+  },
+  {
+    title: "Threading (Cheeks & Eyebrows)",
+    description: "Full facial threading for cheeks and brows.",
+    price: "£5"
+  },
+  {
+    title: "Head Massage",
+    description: "Relaxing head massage to finish your service.",
+    price: "£10"
+  },
+  {
+    title: "Hair Colour",
+    description: "Colour services tailored to your style (from price).",
+    price: "From £10"
+  },
+  {
+    title: "Facial",
+    description: "Deep cleansing facial treatment for refreshed skin.",
+    price: "£10"
+  },
+  {
+    title: "Facial & Steam",
+    description: "Face massage, mask and steam therapy.",
+    price: "£15"
+  },
+  {
+    title: "Nose Wax",
+    description: "Quick wax to remove unwanted nose hair.",
+    price: "£3"
+  },
+  {
+    title: "Cheek Wax",
+    description: "Smooth cheeks with warm wax finish.",
+    price: "£6"
+  },
+  {
+    title: "Nose & Ear Wax",
+    description: "Bundle treatment for nose and ears.",
+    price: "£6"
   }
 ];

@@ -5,24 +5,22 @@ export function BarberShowcase() {
   return (
     <section id="barbers" className="section-container">
       <div className="flex flex-col gap-12 md:flex-row md:items-center md:justify-between">
-        <SectionHeading eyebrow="Our Barbers" title="Artists Behind the Craft" />
+        <SectionHeading eyebrow="Our Barbers" title="Meet the Rexha crew" />
         <p className="max-w-xl text-sm text-slate-300 md:text-base">
-          Each member of the Rexha team honed their craft in renowned grooming lounges around the world. We blend European
-          tradition with modern New York energy to deliver a bespoke experience every session.
+          Friendly faces, steady hands and serious attention to detail. Whether it’s a fresh fade for the weekend or a tidy-up
+          before work, our team has you covered.
         </p>
       </div>
       <div className="mt-12 grid gap-8 md:grid-cols-3">
         {team.map((member) => (
-          <article key={member.name} className="card-surface flex flex-col gap-6">
-            <div className="aspect-[4/5] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-              <div className="h-full w-full bg-[radial-gradient(circle_at_top,#1f2937,transparent_60%)]" />
-            </div>
+          <article key={member.name} className="flex flex-col gap-6 rounded-[2.5rem] border border-white/10 bg-black/50 p-8 shadow-2xl shadow-black/50">
+            <div className="aspect-[4/5] w-full overflow-hidden rounded-2xl border border-primary/30 bg-[radial-gradient(circle_at_top,#7f1d1d,transparent_70%)]" />
             <div className="space-y-2">
               <p className="text-xs uppercase tracking-[0.3em] text-primary">{member.role}</p>
               <h3 className="text-2xl font-semibold text-white">{member.name}</h3>
               <p className="text-sm text-slate-300">{member.bio}</p>
             </div>
-            <div className="rounded-2xl border border-white/5 bg-white/5 px-4 py-3 text-xs uppercase tracking-[0.3em] text-slate-300">
+            <div className="rounded-2xl border border-primary/30 bg-primary/10 px-4 py-3 text-xs uppercase tracking-[0.3em] text-primary">
               {member.specialty}
             </div>
           </article>

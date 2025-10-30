@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#c59d5f",
-        dark: "#0f172a",
-        ash: "#1e293b"
+        primary: "#dc2626",
+        dark: "#070707",
+        ash: "#111827"
       },
       fontFamily: {
         heading: ["Playfair Display", "serif"],

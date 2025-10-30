@@ -8,7 +8,8 @@
 
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.9), #020617);
+  background: radial-gradient(circle at top, rgba(220, 38, 38, 0.25), #050505);
+  color: #f9fafb;
 }
 
 .section-container {
@@ -24,21 +25,17 @@ body {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded-full border border-primary/30 bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-950 transition hover:border-primary/60 hover:bg-transparent hover:text-primary;
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-primary/40 bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:border-primary hover:bg-transparent hover:text-primary;
 }
 
 .btn-outline {
-  @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:border-primary hover:text-primary;
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-200 transition hover:border-primary hover:text-primary;
 }
 
 .card-surface {
-  @apply rounded-3xl border border-white/5 bg-white/5 p-8 shadow-xl shadow-black/40 backdrop-blur-lg transition hover:-translate-y-1 hover:border-primary/40;
+  @apply rounded-3xl border border-white/5 bg-white/5 p-8 shadow-xl shadow-black/60 backdrop-blur-lg transition hover:-translate-y-1 hover:border-primary/50 hover:bg-black/40;
 }
 
 .gradient-ring {
-  background: conic-gradient(from 90deg at 50% 50%, rgba(197, 157, 95, 0.75), rgba(148, 163, 184, 0.1), rgba(197, 157, 95, 0.75));
-}
-
-.text-gold {
-  color: #c59d5f;
+  background: conic-gradient(from 90deg at 50% 50%, rgba(220, 38, 38, 0.65), rgba(148, 163, 184, 0.1), rgba(220, 38, 38, 0.65));
 }
